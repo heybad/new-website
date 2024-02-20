@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kamal's Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <section id= 'id' >
+      <header>
+        <div class="container">
+          <div class="header-content">
+            <img src="/static/LOGO.jpeg" alt="Logo">
+            <nav>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+  <!-- Home Section -->
+ 
+      <section id="home">
+        <h1>Welcome to Kamal's Portfolio</h1>
+        <p>This is where I showcase my projects and skills.</p>
+      </section>
+    
+      <!-- Portfolio Section -->        
+        <h2>Portfolio</h2>
+          <section id="projects">
+             <h3><a href="/project1">Project 1</a></h3>
+            <h3><a href="/project2">Project 2</a></h3> 
+          </section>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+      <form method="post" action="/project1">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      <!-- <button type="submit">Send</button> -->
+        <a href="mailto:Kmohamud222@gmail.com">Send Email</a>
+
+    </form>
+  </section>
+
+</body>
+</html>

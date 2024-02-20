@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal's Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    
+
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <img src="/static/LOGO.jpeg" alt="Logo">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Portfolio</a></li>
+            <li><a href="/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  
+    <h1>Predict your Income: </h1>
+    <div class="container">
+        <form method="post" action="/project1">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            <label for="experience">Experience:</label>
+            <input type="number" id="experience" name="experience" required>
+            <input type="submit" value="Predict Income">
+        </form>
+
+        {% if prediction %}
+        <p>Predicted Income: ${{ prediction }}</p>
+        {% endif %}
+    </div>
+
+</body>
+</html>
