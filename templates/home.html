@@ -9,11 +9,14 @@
 <body>
 
   <!-- Navigation Bar -->
-  <section id= 'id' >
-      <header>
-        <div class="container">
-          <div class="header-content">
-            <img src="/static/LOGO.jpeg" alt="Logo">
+
+  <header>
+        <div class="logo">
+           <img src="static/logo.png" alt="logo-image">
+        </div>
+    
+        <div class="nav-links"">
+          
             <nav>
               <ul>
                 <li><a href="#home">Home</a></li>
@@ -21,24 +24,51 @@
                 <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
-          </div>
         </div>
-      </header>
+        
+  </header>
+    
 
   <!-- Home Section -->
  
       <section id="home">
-        <h1>Welcome to Kamal's Portfolio</h1>
-        <p>This is where I showcase my projects and skills.</p>
+        
+        <div class="home-text">
+        <h1> Professional Summary </h1>
+          <p>
+            I am a detail-oriented Data Scientist with a Master's degree in Data Science from Eastern University. <br><br>
+            My expertise includes:<br><br>
+
+            - Proficiency in Python, SQL, and Tableau.<br>
+            - Data cleaning, analysis, and visualization.<br>
+            - Machine learning and  statistical analysis.<br><br>
+
+            I am passionate about leveraging data to extract valuable insights and drive informed decision-making.
+          </p>
+
+
+
+
+          
+        </div>
+        <div class="me">
+        <img src="static/me.jpg" alt="me">
+        </div>
       </section>
     
       <!-- Portfolio Section -->        
-        <h2>Portfolio</h2>
-          <section id="projects">
-             <h3><a href="/project1">Project 1</a></h3>
-            <h3><a href="/project2">Project 2</a></h3> 
-          </section>
-  </section>
+    <section class="project">
+      <div>
+      
+        <h3><a href="/project1">Project 1</a></h3>
+        <img src="static/project1.jpg" alt="Project 1">
+      </div>
+      <div>
+        
+        <h3><a href="/project2">Project 2</a></h3>
+        <img src="static/project2.jpg" alt="Project 2">
+      </div>
+    </section>
 
   <!-- Contact Section -->
   <section id="contact">
@@ -51,7 +81,7 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" required></textarea>
       <!-- <button type="submit">Send</button> -->
-        <a href="mailto:Kmohamud222@gmail.com">Send Email</a>
+      <a href="mailto:Kmohamud222@gmail.com">Send Email</a>
 
     </form>
   </section>
