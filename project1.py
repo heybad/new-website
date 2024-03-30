@@ -13,6 +13,6 @@ def agevsincome():
     if request.method == 'POST':
         age = float(request.form['age'])
         experience = float(request.form['experience'])
-        prediction = model.predict([[age, experience]])[0][0]
-        return render_template('project1.html', prediction=prediction)
+        predictionss = model.predict([[age, experience]])[0][0]
+        return render_template('project1.html', prediction=predictionss)
     return render_template('project1.html', prediction=None)
